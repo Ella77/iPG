@@ -51,6 +51,28 @@ $(document).keypress(function(e) {
 	}
 });
 </script>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://starttip.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60da0d0e0c8f38bc"></script>
+
 
 </head>
 <body>
@@ -59,6 +81,10 @@ $(document).keypress(function(e) {
 <div id="end" class="hide">
 	<h1>You have reached the end of questions</h1>
 	<h2>Hopefully you will be a little more ready for your YC interview, good luck! :)</h2>
+
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+            
 
 	<p>Why not check out <a href="http://goscale.com/">GoScale</a>, it&#39;s cloud computing that scales in milliseconds.</p>
 </div>
@@ -100,6 +126,8 @@ $(document).keypress(function(e) {
 </div>
 
 
+
+
 <!-- Footer -->
 <div class="footer">
 	Built by
@@ -107,6 +135,9 @@ $(document).keypress(function(e) {
 	<a href="https://entrevate.com/">Colin Hayhurst</a> for
 	<a href="https://goscale.com/">GoScale</a>&#39;s YC S12 Interview
 </div>
+
+
+
 
 </body>
 </html>
