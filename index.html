@@ -39,18 +39,80 @@ $(document).keypress(function(e) {
 			break;
 
 		case 32:
-			// Restart Timer - Space (32)
+			// Restart Timv  er - Space (32)
 			timer_restart();
 			break;
 
 		case 110:
 			// Doesn't Do Anything, Move Along
 			$('body').append('<div class="egg"><iframe width="420" height="315" src="http://www.youtube.com/embed/QH2-TGUlwu4?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
+			
+            
 			break;
 
 	}
 });
 </script>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60da0d0e0c8f38bc"></script>
+
+
+</head>
+<body>
+
+<!-- Message to be Displayed when out of questions -->
+<div id="end" class="hide">
+	<h1>모든 문제를 다 해결하셨습니다.</h1>
+	<h2>당신의 비지니스에 대해 좀 더 아시는 아시는 시간이 되셨나요? 행운을 빕니다 :)</h2>
+
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_inline_share_toolbox"></div>
+            
+
+	<p>당신의 삶과 커리어를 위한 콘텐츠<a href="career.lifetip.org">s커리어팁</a>창업가를 위한 리소스가 가득한 홈페이지도 놀러오세요!</p>
+</div>
+
+
+<!-- Question Display --->
+<div id="question">
+	&nbsp;
+</div>
+
+
+<!-- Timer -->
+<div id="timer">
+	Timer
+</div>
+	
+
+<!-- Dissapointed Paul Graham -->
+<div class="pg hide">
+	<img src="pg.jpg" width="400" height="300" />
+</div>
+<div class="pg addthis_inline_share_toolbox"></div>
+	
+
+
+<!-- Tips Display -->
+<div class="tip">
+	<strong>팁 :</strong> <span id="tip">&nbsp;</span>
+</div>
+
+
+<!-- Keyboard Control Reference -->
+<div class="controls">
+	<h1>키보드를 이용하세요</h1>
+
+	<div class="key key-space">space</div>
+	<div class="act">시간 추가하기</div>
+
+	<div class="key key-return">return</div>
+	<div class="act">다음 문제로 패스</div>
+	
+	<!-- <div class="key key-enter">esc</div>
+	<div class="act">그만두기</div> -->
+</div>
 <div id="disqus_thread"></div>
 <script>
     /**
@@ -70,70 +132,20 @@ $(document).keypress(function(e) {
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60da0d0e0c8f38bc"></script>
-
-
-</head>
-<body>
-
-<!-- Message to be Displayed when out of questions -->
-<div id="end" class="hide">
-	<h1>You have reached the end of questions</h1>
-	<h2>Hopefully you will be a little more ready for your YC interview, good luck! :)</h2>
-
-                <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                <div class="addthis_inline_share_toolbox"></div>
-            
-
-	<p>Why not check out <a href="http://goscale.com/">GoScale</a>, it&#39;s cloud computing that scales in milliseconds.</p>
-</div>
-
-
-<!-- Question Display --->
-<div id="question">
-	&nbsp;
-</div>
-
-
-<!-- Timer -->
-<div id="timer">
-	Timer
-</div>
-
-
-<!-- Dissapointed Paul Graham -->
-<div class="pg hide">
-	<img src="pg.jpg" width="400" height="300" />
-</div>
-
-
-<!-- Tips Display -->
-<div class="tip">
-	<strong>ProTip:</strong> <span id="tip">&nbsp;</span>
-</div>
-
-
-<!-- Keyboard Control Reference -->
-<div class="controls">
-	<h1>Key Controls</h1>
-
-	<div class="key key-space">space</div>
-	<div class="act">to restart timer</div>
-
-	<div class="key key-return">return</div>
-	<div class="act">to next question</div>
-</div>
-
 
 
 
 <!-- Footer -->
 <div class="footer">
+
 	Built by
 	<a href="https://jamescun.com/">James Cunningham</a> and
 	<a href="https://entrevate.com/">Colin Hayhurst</a> for
 	<a href="https://goscale.com/">GoScale</a>&#39;s YC S12 Interview
+	<br>
+	
+	<a href="https://www.linkedin.com/in/ellie-kang-a13400174/">Ellie Kang</a> 이 번역, 수정하였습니다.
+
 </div>
 
 

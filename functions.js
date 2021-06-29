@@ -18,7 +18,7 @@ function next_q()
 		{
 			$('#question').addClass('hide');
 			$('#timer').addClass('hide');
-			$('.pg').addClass('hide');
+			$('.pg').addClass('hide')
 			
 			$('#end').removeClass('hide');
 		}
@@ -37,7 +37,7 @@ function timer_tick()
 	
 	timer = timer - 1;
 	
-	$('#timer').html(timer + ' s');
+	$('#timer').html(timer + '초');
 	
 	
 	if (timer < 10)
