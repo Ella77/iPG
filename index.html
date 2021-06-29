@@ -42,13 +42,17 @@ $(document).keypress(function(e) {
 			// Restart Timv  er - Space (32)
 			timer_restart();
 			break;
+			
+		<!-- TODO esc버튼 아예 끝내기-> 바로 결과화면 you failed -->
+
+
 
 		case 110:
 			// Doesn't Do Anything, Move Along
 			$('body').append('<div class="egg"><iframe width="420" height="315" src="http://www.youtube.com/embed/QH2-TGUlwu4?autoplay=1" frameborder="0" allowfullscreen></iframe></div>');
 			
             
-			break;
+			break;git 
 
 	}
 });
@@ -61,13 +65,28 @@ $(document).keypress(function(e) {
 </head>
 <body>
 
+				<!-- TODO 초기 난이도 설정 3가지 모드 그림 중 선택 (5초,15초,30초)  -->
+
+
+	
+	
 <!-- Message to be Displayed when out of questions -->
 <div id="end" class="hide">
 	<h1>모든 문제를 다 해결하셨습니다.</h1>
+	
+	<!-- TODO 문제를 다 보기까지 평균 몇초가 걸렸는지 트래킹해서 결과화면에 -->
+						<!-- TODO 몇초걸렸는지에 따라 다른 이미지 3가지 -->
+
+
+
+	
 	<h2>당신의 비지니스에 대해 좀 더 아시는 아시는 시간이 되셨나요? 행운을 빕니다 :)</h2>
 
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_inline_share_toolbox"></div>
+	
+			<!-- TODO esc버튼 아예 끝내기-> 바로 결과화면 you failed -->
+
             
 
 	<p>당신의 삶과 커리어를 위한 콘텐츠<a href="career.lifetip.org">s커리어팁</a>창업가를 위한 리소스가 가득한 홈페이지도 놀러오세요!</p>
@@ -84,7 +103,9 @@ $(document).keypress(function(e) {
 <div id="timer">
 	Timer
 </div>
-	
+			<!-- TODO 타이머 바-->
+
+
 
 <!-- Dissapointed Paul Graham -->
 <div class="pg hide">
@@ -108,9 +129,10 @@ $(document).keypress(function(e) {
 	<div class="act">시간 추가하기</div>
 
 	<div class="key key-return">return</div>
-	<div class="act">다음 문제로 패스</div>
+	<div class="act">답변 성공</div>
 	
-	<!-- <div class="key key-enter">esc</div>
+	<!-- TODO esc누르면-> 바로 결과화면 you failed -->
+	<!-- <div class="key key-esc">esc</div>
 	<div class="act">그만두기</div> -->
 </div>
 <div id="disqus_thread"></div>
