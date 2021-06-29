@@ -20,6 +20,7 @@ tips.sort(function() {return 0.5 - Math.random()})
 // End Questions
 q.push('done');
 
+	
 
 $(document).ready(function(){
 	next_q();
@@ -60,8 +61,7 @@ $(document).keypress(function(e) {
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60da0d0e0c8f38bc"></script>
-
-
+	
 </head>
 <body>
 
@@ -99,17 +99,37 @@ $(document).keypress(function(e) {
 </div>
 
 
+
 <!-- Timer -->
 <div id="timer">
 	Timer
 </div>
+	
+	
+	
+<!-- <div class="round-time-bar" data-style="smooth" style="--duration: 15;">
+  <div></div>
+</div>
+ -->
+<!-- 
+<button id="restart-button">restart timers</button> -->
+   	<!-- <div id='bar'>
+  <div id='slider'>
+    <div id="slider-button"></div>
+    <div id='info-pointer'></div>
+    <div id='info'>
+    </div>
+  </div>
+</div> -->
+
+
 			<!-- TODO 타이머 바-->
 
 
 
 <!-- Dissapointed Paul Graham -->
 <div class="pg hide">
-	<img src="pg.jpg" width="400" height="300" />
+	<img src="fail.png" width="600" height="450" />
 </div>
 <div class="pg addthis_inline_share_toolbox"></div>
 	
@@ -128,12 +148,12 @@ $(document).keypress(function(e) {
 	<div class="key key-space">space</div>
 	<div class="act">시간 추가하기</div>
 
-	<div class="key key-return">return</div>
+	<div class="key key-return">enter</div>
 	<div class="act">답변 성공</div>
 	
-	<!-- TODO esc누르면-> 바로 결과화면 you failed -->
-	<!-- <div class="key key-esc">esc</div>
-	<div class="act">그만두기</div> -->
+	<!-- TODO esc누르면-> 바로 결과화면 you failed --> 
+	 <div class="key key-esc">esc</div>
+	<div class="act">그만두기</div> 
 </div>
 <div id="disqus_thread"></div>
 <script>

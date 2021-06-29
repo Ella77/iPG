@@ -32,6 +32,9 @@ function next_q()
 
 function timer_tick()
 {
+	
+				 // TODO 타이머 바
+ 
 	$('#timer').removeClass('warning');
 	$('#timer').removeClass('fail');
 	
@@ -67,7 +70,7 @@ function timer_restart()
 	
 	timer = 15;
 	
-	$('#timer').html('15 s');
+	$('#timer').html('15초');
 }
 
 
@@ -83,3 +86,25 @@ function display_tip()
 	
 	tips.push(tip);
 }
+
+function updateAnim(){
+  let numberOfSeconds = $('#numberOfSeconds').val();
+  $('.progress-bar div').remove();
+  
+  for( let i = 0; i < numberOfSeconds; i++ ){
+    let newBar = '<div></div>';
+    $('.progress-bar').append(newBar);
+	  
+  }
+}
+// const button = document.querySelector("#restart-button");
+// // const bars = document.querySelector(".round-time-bar");
+// button.addEventListener("click", () => {
+// 	$('#timer')
+//     bars.classList.remove("round-time-bar");
+//     bars.offsetWidth;
+//     bars.classList.add("round-time-bar");
+// 	console.log('d');
+ 
+// });
+
